@@ -1,38 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./scripts/styles.css">
-    <title>Calculator</title>
-</head>
-<body>
-    <div class="container-calculator">
-
-    <div class="container-display">
-
-    </div>
-    <div class="container-operators">
-       <div class="container-add">+</div>
-       <div class="container-subtract">-</div>
-       <div class="container-multiply">*</div>
-       <div class="container-divide">/</div> 
-    </div>
-    <div class="container-digits">
-        <div class="container-0">0</div>
-        <div class="container-1">1</div>
-        <div class="container-2">2</div>
-        <div class="container-3">3</div>
-        <div class="container-4">4</div>
-        <div class="container-5">5</div>
-        <div class="container-6">6</div>
-        <div class="container-7">7</div>
-        <div class="container-8">8</div>
-        <div class="container-9">9</div>
-    </div>
-    <div class="container-calculate">=</div>
-</div>
-
-</body>
-<script type="text/javascript" src="./scripts/main.js"></script>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./styles/styles.css" />
+		<title>Calculator</title>
+	</head>
+	<body>
+		<div class="container-calculator">
+			<div class="container-display">
+				<h1></h1>
+			</div>
+			<div class="container-operators">
+				<div class="operators">
+					<button id="plus" value="+">+</button>
+				</div>
+				<div class="operators">
+					<button id="minus" value="-">-</button>
+				</div>
+				<div class="operators">
+					<button id="times" value="*">*</button>
+				</div>
+				<div class="operators">
+					<button id="divide" value="/">/</button>
+				</div>
+			</div>
+			<div class="container-digits">
+				<div class="digits">
+					<button id="1" value="1">1</button>
+				</div>
+				<div class="digits">
+					<button id="2" value="2">2</button>
+				</div>
+				<div class="digits">
+					<button id="3" value="3">3</button>
+				</div>
+				<div class="digits">
+					<button id="4" value="4">4</button>
+				</div>
+				<div class="digits">
+					<button id="5" value="5">5</button>
+				</div>
+				<div class="digits">
+					<button id="6" value="6">6</button>
+				</div>
+				<div class="digits">
+					<button id="7" value="7">7</button>
+				</div>
+				<div class="digits">
+					<button id="8" value="8">8</button>
+				</div>
+				<div class="digits">
+					<button id="9" value="9">9</button>
+				</div>
+				<div class="digits">
+					<button id="0" value="0">0</button>
+				</div>
+				<div class="calculate">
+					<button id="equals" value="=">=</button>
+				</div>
+				<div class="clear">
+					<button id="clear">C</button>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="./scripts/main.js"></script>
 </html>

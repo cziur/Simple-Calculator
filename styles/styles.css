@@ -1,72 +1,82 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    background-color: #D1F8EF;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	background-color: #d1f8ef;
 }
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .container-calculator {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 550px;
-    height: 700px;
-    background-color: #3674B5;
-    margin-top: 100px;
-    border: #A1E3F9, solid, 10px;
-    border-radius: 3%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 550px;
+	height: 700px;
+	background-color: #3674b5;
+	margin-top: 100px;
+	border: #a1e3f9, solid, 10px;
+	border-radius: 3%;
 }
 .container-display {
-    display: flex;
-    align-self: flex-start;
-    margin-top: 25px;
-    height: 100px;
-    width: 500px;
-    border-radius: 10%;
+	display: flex;
+	justify-content: flex-start;
+	align-self: flex-start;
+	align-items: center;
+	margin-top: 25px;
+	height: 100px;
+	width: 500px;
+	border-radius: 10%;
+}
+h1 {
+	font-size: 36px;
 }
 .container-operators {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 100%;
-    background-color: #3674B5;
-    font-size: 68px;
-    height: 50px;
-    align-self: flex-start;
-    
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-evenly;
+	width: 100%;
+	background-color: #3674b5;
+	font-size: 68px;
+	height: 50px;
+	align-self: flex-start;
 }
-.container-add, .container-subtract, .container-multiply, .container-divide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100px;
-    align-self: center;
-    border-radius: 5%;
+.operators {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100px;
+	align-self: center;
+	border-radius: 5%;
 }
 .container-digits {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    font-size: 68px;
-    width: 100%;
-    height: 350px;
-    background-color: #3674B5;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: flex-start;
+	font-size: 68px;
+	width: 75%;
+	height: 350px;
+	background-color: #3674b5;
 }
-.container-digits div {
-    display: flex;
-    width: 100px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5%;
+.digits,
+.calculate,
+.clear,
+button {
+	display: flex;
+	width: 100px;
+	justify-content: center;
+	align-items: center;
+	border-radius: 5%;
 }
-
+button {
+	height: 79px;
+	font-size: 68px;
+}
