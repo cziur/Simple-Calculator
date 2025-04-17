@@ -1,23 +1,47 @@
-const operator = document.querySelectorAll(".operators");
-const display = document.querySelectorAll("h1");
-const digits = document.querySelectorAll(".digits");
-const equals = document.getElementById("equals");
+const operator = document.querySelectorAll(".operators button");
+const plus = document.getElementById("plus");
+const minus = document.getElementById("minus");
+const multiply = document.getElementById("times");
+const divide = document.getElementById("divide");
+const display = document.getElementById("display-text");
+const digits = document.querySelectorAll(".digits button");
+const calculate = document.getElementById("equals");
 const clear = document.getElementById("clear");
+const button = document.querySelectorAll("button");
 
+let resultDisplayed = false;
 let calcArr = [];
-let selectOp;
+let operation;
+let firstNumber;
+let secondNumber;
 
-digits.forEach((digit) => {
-	digit.addEventListener("click", (e) => {
-		calcArr.push(e.target.value);
-		console.log(calcArr);
-		display.innerHTML = Number(calcArr.join(""));
-	});
-});
+function clearDisplay() {
+	display.textContent = "";
+}
 
-operator.forEach((op) => {
-	op.addEventListener("click", (e) => {
-		selectOp = e.target.value;
-		console.log(selectOp);
+display.textContent += "Welcome";
+
+button.forEach((btn) => {
+	btn.addEventListener("click", () => {
+		if (display.textContent === "Welcome") {
+			display.textContent = "";
+		}
+		let currentString = display.textContent;
+		let lastChar = currentString.length - 1;
+		display.textContent += btn.value;
+		if (btn === clear) {
+			clearDisplay();
+		} else if (
+			btn === plus ||
+			btn === minus ||
+			btn === multiply ||
+			btn === divide
+		) {
+			operation = btn.value;
+			console.log(operation);
+		} else if (btn === digits) {
+			firstNumber = btn.value;
+			console.log(firstNumber);
+		}
 	});
 });
